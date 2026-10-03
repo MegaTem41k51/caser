@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>КЕЙСЕР — Demo UI</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app">
+  <header class="topbar">
+    <div class="brand"><span class="brand-mark">◈</span><b>КЕЙСЕР</b></div>
+    <nav>
+      <a>ИНВЕНТАРЬ</a><a>КЕЙСЫ</a><a class="active">АПГРЕЙДЫ</a><a>НАГРАДЫ</a>
+    </nav>
+    <div class="wallet"><span>◈ 0.00</span><span>◇ 0.00</span><button>+</button><span>♟</span><div class="avatar"></div></div>
+  </header>
+
+  <aside class="sidebar">
+    <div class="promo"><div>ПОЛУЧИ</div><strong>DRAGON LORE</strong></div>
+    <div class="online">ONLINE <b>◉ 6 504</b></div>
+    <div class="side-tabs"><span>▦</span><span>♨</span></div>
+    <div class="side-items">
+      <div class="side-item"><i></i><div><b>ПРЕДМЕТ 01</b><small>Digital Item · Standard</small></div></div>
+      <div class="side-item"><i></i><div><b>ПРЕДМЕТ 02</b><small>Digital Item · Special</small></div></div>
+      <div class="side-item"><i></i><div><b>ПРЕДМЕТ 03</b><small>Digital Item · Rare</small></div></div>
+      <div class="side-item"><i></i><div><b>ПРЕДМЕТ 04</b><small>Digital Item · Premium</small></div></div>
+      <div class="side-item"><i></i><div><b>ПРЕДМЕТ 05</b><small>Digital Item · Standard</small></div></div>
+      <div class="side-item"><i></i><div><b>ПРЕДМЕТ 06</b><small>Digital Item · Rare</small></div></div>
+      <div class="side-item"><i></i><div><b>ПРЕДМЕТ 07</b><small>Digital Item · Premium</small></div></div>
+      <div class="side-item"><i></i><div><b>ПРЕДМЕТ 08</b><small>Digital Item · Standard</small></div></div>
+    </div>
+  </aside>
+
+  <main>
+    <div class="close">×</div>
+    <section class="upgrade">
+      <div class="panel left">
+        <div class="panel-title">Выберите предметы и/или баланс для использования</div>
+        <div class="empty">Выбранные предметы появятся здесь</div>
+      </div>
+
+      <div class="center">
+        <div class="mini-logo">◈ <b>КЕЙСЕР</b></div>
+        <div class="dial">
+          <div class="ticks"></div>
+          <div class="dial-inner">
+            <div class="orange-ring"></div>
+            <div class="chance">50.00%<small>Средний шанс</small></div>
+          </div>
+          <div class="needle"></div>
+        </div>
+        <button class="upgrade-btn" id="upgradeBtn">АПГРЕЙД</button>
+        <div class="multipliers">
+          <button class="selected">✦</button><button>x2</button><button>x5</button><button>x10</button>
+          <button>30%</button><button>50%</button><button>75%</button>
+        </div>
+      </div>
+
+      <div class="panel right">
+        <div class="panel-title">Выберите предмет для апгрейда</div>
+        <div class="empty">Выберите предмет из списка ниже</div>
+      </div>
+    </section>
+
+    <div class="balance-row">
+      <span>◈ &nbsp;Добавить баланс</span><b>0</b><div class="bar"></div><span>◈ 0.00</span>
+    </div>
+
+    <section class="inventory">
+      <div class="inventory-head"><b>▣ &nbsp; Мои предметы</b><span>☷</span></div>
+      <div class="inventory-empty">
+        <div class="big-icon">▣</div>
+        <h3>Ваш инвентарь пуст</h3>
+        <p>Открой свой первый кейс</p>
+        <button>▣ &nbsp; ОТКРЫТЬ КЕЙС</button>
+      </div>
+    </section>
+
+    <section class="picker">
+      <div class="picker-head"><b>⌃ &nbsp; Выбрать предмет</b><span>↕</span><span class="filter">Цена</span><span class="filter">От</span><span class="filter">До</span><span>⌕</span></div>
+      <div class="grid" id="grid"></div>
+    </section>
+  </main>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
