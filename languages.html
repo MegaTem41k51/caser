@@ -1,6 +1,6 @@
-<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Апгрейды — Демо</title><link rel="stylesheet" href="styles.css"></head><body><div class="app"><header class="topbar">
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Язык — Демо</title><link rel="stylesheet" href="styles.css"></head><body><div class="app"><header class="topbar">
       <a class="brand" href="index.html"><span class="brand-mark">◈</span>КЕЙСЕР</a>
-      <nav class="nav"><a class="" href="inventory.html">ИНВЕНТАРЬ</a><a class="" href="cases.html">КЕЙСЫ</a><a class="active" href="index.html">АПГРЕЙДЫ</a><a class="" href="rewards.html">НАГРАДЫ</a></nav>
+      <nav class="nav"><a class="" href="inventory.html">ИНВЕНТАРЬ</a><a class="" href="cases.html">КЕЙСЫ</a><a class="" href="index.html">АПГРЕЙДЫ</a><a class="" href="rewards.html">НАГРАДЫ</a></nav>
       <div class="wallet">
         <a class="balance" href="balance.html">◈ 0.00</a>
         <a class="balance" href="balance.html">◇ 0.00</a>
@@ -20,14 +20,7 @@
         <div class="side-item" onclick="selectSide('Предмет 05')"><i></i><div><b>ПРЕДМЕТ 05</b><small>Digital Item · Standard</small></div></div>
         <div class="side-item" onclick="selectSide('Предмет 06')"><i></i><div><b>ПРЕДМЕТ 06</b><small>Digital Item · Rare</small></div></div>
       </div>
-    </aside><main><div class="upgrade-layout">
-<div class="panel"><div class="panel-title">Выберите предметы и/или баланс для использования</div><div id="chosen" class="empty">Выбранные предметы появятся здесь</div></div>
-<div class="center"><h2>◈ КЕЙСЕР</h2><div class="dial"><div class="dial-inner"><div class="chance" id="chance">50.00%<small>Средний шанс</small></div></div></div><button class="btn" onclick="runUpgrade()">АПГРЕЙД</button><div class="mult"><button onclick="setChance(30,this)">30%</button><button onclick="setChance(50,this)">50%</button><button onclick="setChance(75,this)">75%</button></div><div class="toolbar" style="margin-top:10px"><button class="btn gray" onclick="toggleSound(this)">🔊 Звук</button><button class="btn gray" onclick="toggleTurbo(this)">⚡ Турбо</button></div></div>
-<div class="panel"><div class="panel-title">Выберите предмет для апгрейда</div><div id="target" class="empty">Выберите предмет из списка ниже</div></div>
-</div>
-<div style="margin-top:15px" class="notice">Демо-режим: кнопки работают локально, реальные ставки и платежи отсутствуют.</div>
-<section class="page" style="margin-top:15px;min-height:330px"><h2>Мои предметы</h2><div class="empty" style="height:190px"><div><h3>Ваш инвентарь пуст</h3><p>Открой свой первый кейс</p><a class="btn" href="cases.html">▣ ОТКРЫТЬ КЕЙС</a></div></div></section>
-<section class="page" style="margin-top:15px"><div class="toolbar"><button class="btn gray" onclick="sortItems()">↕ Сортировка</button><input id="search" placeholder="Поиск..." oninput="filterItems()"></div><div class="grid" id="items"></div></section><footer class="footer">
+    </aside><main><div class="page"><a class="back" href="index.html">← На главную</a><h1>Выбор языка</h1><div class="cards"><button class="btn" onclick="setLang('Русский')">🇷🇺 Русский</button><button class="btn gray" onclick="setLang('English')">🇬🇧 English</button><button class="btn gray" onclick="setLang('Українська')">🇺🇦 Українська</button></div></div><footer class="footer">
       <div><h3>Навигация</h3><a href="inventory.html">Инвентарь</a><a href="index.html">Апгрейды</a><a href="cases.html">Кейсы</a><a href="rewards.html">Награды</a><a href="contacts.html">Контакты</a><a href="blog.html">Блог</a></div>
       <div><h3>Общие положения</h3><a href="tos.html">Пользовательское соглашение</a><a href="privacy.html">Политика конфиденциальности</a><a href="cookie.html">Политика использования Cookie</a><a href="aml.html">Политика AML/KYC</a></div>
       <div><h3>Поддержка</h3><a href="mailto:support@example.demo">support@example.demo</a><a href="mailto:partner@example.demo">Сотрудничество</a><a href="https://t.me/" target="_blank">Telegram</a><button class="btn gray" onclick="openLanguage()">🇷🇺 Русский ▾</button></div>
